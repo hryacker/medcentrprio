@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="top-line">
+        <div class="container">
+          <div class="row">
+            <div class="col"><span class="town">г. Приозерск, ул. Комсомольская, д. 6</span></div>
+            <div class="col"><span class="working">Пн-Пт с 9:00 до 19:00 &nbsp Сб с 8:00 до 15:00</span></div>
+            <div class="col"> <a href="tel:+79291784646"><span class="phone">+7 (929) 178-46-46</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-line">
+        <div class="container">
+          <div class="row">
+            <div class="col logo-box"><a class="logo-box__link" href="/"> <img class="logo-box__link-img" src="img/logo.svg" alt=""></a></div>
+            <div class="col middle-line-actions">
+              <button class="btn btn-outline"><span>Запись на прием</span></button>
+            </div>
+            <div class="col middle-line-mobile-actions">
+              <div class="icon-planshet"><img src="img/icon-planshet.svg" alt=""></div>
+              <div class="icon-clock"><img src="img/icon-clock.svg" alt=""></div>
+              <div class="icon-phone"><a href="tel:+78137938178"><img src="img/icon-phone.svg" alt=""></a></div>
+              <div class="icon-menu-burger"><span> </span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-menu">
+        <div class="container">
+          <nav class="menu main-menu">
+            <ul class="menu-list">
+              <li class="menu__item"> <a class="menu__link" href="/">Главная</a></li>
+              <li class="menu__item"> <a class="menu__link" href="/services.html">Услуги и цены</a></li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/doctors.html">Врачи</a>
+                <ul class="sub-menu">
+                  <li class="menu__item menu__item--has-children"><a class="menu__link" href="/">Вложенный пункт 1</a>
+                    <ul class="sub-menu">
+                      <li class="menu__item menu__item--has-children"><a class="menu__link" href="/">Вasdfasfdsafdasfasdfsadfsa</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено </a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено </a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Вложено     </a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/shedule.html">Расписание врачей</a>
+                <ul class="sub-menu">
+                  <li class="menu__item"><a class="menu__link" href="/">Вложенный пункт 1</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/diagnostic.html">Диагностика</a>
+                <ul class="sub-menu">
+                  <li class="menu__item"><a class="menu__link" href="/">Вложенный пункт 1</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/about.html">О центре</a>
+                <ul class="sub-menu">
+                  <li class="menu__item"><a class="menu__link" href="/">Вложенный пункт 1</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"> <a class="menu__link" href="/contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+<button class="grid">debug-grid</button>
+<div class="debug-grid">
+  <div class="container">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<section class="services">
+  <div class="container">
+    <h1>Услуги медицинского центра <span class="modify">Здоровье</span></h1>
+    <div class="switch">
+      <div class="switch__bg"></div>
+      <div class="switch__content switch__content--active" data-show-direction="#directions-adult" data-direction="adult"><span class="switch__content-text">Для взрослых</span></div>
+      <div class="switch__content" data-show-direction="#directions-children" data-direction="children"><span class="switch__content-text">Для детей</span></div>
+    </div>
+  </div>
+  <div class="panes">
+    <div class="panes__title"></div>
+    <div class="pane">
+      <div class="pane__title"></div>
+      <div class="pane__content"></div>
+    </div>
+  </div>
+</section>
+<section class="before-footer">
+  <div class="container">
+    <h2>Сделайте <span class="modify">первый шаг</span> на <span class="modify">пути к здоровью!</span></h2>
+  </div>
+  <div class="container container-grab-form container-grab-form-bf">
+    <form class="grab-form-before-footer" action="">                               
+      <div class="name">       
+        <label class="grab-form-bf__label grab-form-bf__label--name"><span class="label__text">Имя</span>
+          <input type="text" placeholder="">
+        </label>
+      </div>
+      <div class="phone">       
+        <label class="grab-form-bf__label grab-form-bf__label--phone"><span class="label__text">Телефон</span>
+          <input type="tel" placeholder="+7 ххх ххх хх хх">
+        </label>
+      </div>
+      <div class="doctor">
+        <label class="grab-form-bf__label grab-form-bf__label--doctor"><span class="label__text">Выберите врача</span>
+          <div class="select-wrapper">
+            <select class="grab-form-bf__select" name="">
+              <option disabled selected> Сомневаюсь</option>
+              <option>Дерматовенеролог</option>
+              <option>Кардиолог</option>
+              <option>Гастроэнтеролог</option>
+              <option>Терапевт</option>
+              <option>Гинеколог</option>
+              <option>Невролог</option>
+              <option>Психотерапевт</option>
+              <option>Травматолог</option>
+            </select>
+          </div>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="btn btn-fill">Записаться</button>
+      </div>
+    </form>
+  </div>
+</section>
+<footer class="page-footer">
+  <div class="container container-footer-info">
+    <div class="row row-footer-info">
+      <div class="col footer-logo">
+        <div class="logo"><a class="logo__link" href="/"> <img class="logo logo__img" src="img/logo2.svg" alt=""></a></div>
+      </div>
+      <div class="col footer-info">
+        <div class="med-info">
+          <ul class="med-info-list">
+            <li class="med-info__item location">г. Приозерск, ул. Комсомольская, д. 6</li>
+            <li class="med-info__item phone"> <a class="med-info__link" href="tel:+79291784646">+7 (929) 178-46-46</a></li>
+            <li class="med-info__item mail"> <a class="med-info__link" href="mailto:medcentrprio@mail.ru">medcentrprio@mail.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col footer-actions">
+        <div class="social-info"><a href="#"> <img src="img/icon-vk-white.svg" alt=""></a>
+          <p>Присоединяйтесь к более чем<br>4000 подписчикам Вконтакте</p>
+        </div>
+        <button class="feed-back">Обратная связь</button>
+      </div>
+    </div>
+  </div>
+  <div class="menu footer-menu">
+    <div class="container">
+      <ul class="menu-list">
+        <li class="menu__item"><a class="menu__link" href="/.html"> Главная</a></li>
+        <li class="menu__item"><a class="menu__link" href="/services.html"> Услуги и цены</a></li>
+        <li class="menu__item"><a class="menu__link" href="/doctors.html"> Врачи</a></li>
+        <li class="menu__item"><a class="menu__link" href="/shedule.html"> Расписание врачей</a></li>
+        <li class="menu__item"><a class="menu__link" href="/diagnostic.html"> Диагностика</a></li>
+        <li class="menu__item"><a class="menu__link" href="/about.html"> О центре</a></li>
+        <li class="menu__item"><a class="menu__link" href="/contacts.html"> Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="containter">                
+    <p class="copyright">Copyright © 2005-2022 | Медицинский центр ООО “Здоровье”</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</footer>
