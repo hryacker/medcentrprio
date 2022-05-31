@@ -18,7 +18,7 @@
           <div class="row">
             <div class="col"><span class="town">г. Приозерск, ул. Комсомольская, д. 6</span></div>
             <div class="col"><span class="working">Пн-Пт с 9:00 до 19:00 &nbsp Сб с 8:00 до 15:00</span></div>
-            <div class="col"> <a href="tel:+79291784646"><span class="phone">+7 (929) 178-46-46</span></a></div>
+            <div class="col"> <a href="tel:88137938178"><span class="phone">8 (813) 793-81-78</span></a></div>
           </div>
         </div>
       </div>
@@ -44,37 +44,10 @@
             <ul class="menu-list">
               <li class="menu__item"> <a class="menu__link" href="/">Главная</a></li>
               <li class="menu__item"> <a class="menu__link" href="/services.html">Услуги и цены</a></li>
-              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/doctors.html">Врачи</a>
-                <ul class="sub-menu">
-                  <li class="menu__item menu__item--has-children"><a class="menu__link" href="/">Вложенный пункт 1</a>
-                    <ul class="sub-menu">
-                      <li class="menu__item menu__item--has-children"><a class="menu__link" href="/">Вasdfasfdsafdasfasdfsadfsa</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено </a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено </a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Вложено     </a></li>
-                </ul>
-              </li>
-              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/shedule.html">Расписание врачей</a>
-                <ul class="sub-menu">
-                  <li class="menu__item"><a class="menu__link" href="/">Вложенный пункт 1</a></li>
-                </ul>
-              </li>
-              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/diagnostic.html">Диагностика</a>
-                <ul class="sub-menu">
-                  <li class="menu__item"><a class="menu__link" href="/">Вложенный пункт 1</a></li>
-                </ul>
-              </li>
-              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/about.html">О центре</a>
-                <ul class="sub-menu">
-                  <li class="menu__item"><a class="menu__link" href="/">Вложенный пункт 1</a></li>
-                </ul>
-              </li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/doctors.html">Врачи</a></li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/shedule.html">Расписание врачей</a></li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/diagnostic.html">Диагностика</a></li>
+              <li class="menu__item menu__item--has-children"> <a class="menu__link" href="/about.html">О центре</a></li>
               <li class="menu__item"> <a class="menu__link" href="/contacts.html">Контакты</a></li>
             </ul>
           </nav>
@@ -83,7 +56,6 @@
     </header>
   </body>
 </html>
-<button class="grid">debug-grid</button>
 <div class="debug-grid">
   <div class="container">
     <div>
@@ -102,20 +74,584 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="breadcrumbs"><a href="/">Главная </a><a class="active" href="#">Услуги и цены</a></div>
+</div>
 <section class="services">
   <div class="container">
     <h1>Услуги медицинского центра <span class="modify">Здоровье</span></h1>
     <div class="switch">
       <div class="switch__bg"></div>
-      <div class="switch__content switch__content--active" data-show-direction="#directions-adult" data-direction="adult"><span class="switch__content-text">Для взрослых</span></div>
-      <div class="switch__content" data-show-direction="#directions-children" data-direction="children"><span class="switch__content-text">Для детей</span></div>
+      <div class="switch__content switch-serv-direction switch__content--active" data-show-direction="#directions-adult" data-direction="adult" data-anm-dir="Left"><span class="switch__content-text">Для взрослых</span></div>
+      <div class="switch__content switch-serv-direction" data-show-direction="#directions-children" data-direction="children" data-anm-dir="Right"><span class="switch__content-text">Для детей</span></div>
     </div>
-  </div>
-  <div class="panes">
-    <div class="panes__title"></div>
-    <div class="pane">
-      <div class="pane__title"></div>
-      <div class="pane__content"></div>
+    <div class="panes-wrapapper">
+      <div class="panes panes--active panes-adult" id="directions-adult">
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/dermatovenereology.svg" alt="">
+            <div class="pane__title">Дерматовенерология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием дерматовенеролога (СПб) <span class="no-wrap">Савицкая Т.И.</span></td>
+                  <td class="service__price">1500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Повторный прием дерматовенеролога <span class="no-wrap">(в течение 30 дней)</span> <span class="no-wrap">Савицкая Т.И.</span></td>
+                  <td class="service__price">1300 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием дерматовенеролога <span class="no-wrap">Смолина О.А.</span></td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Повторный прием дерматовенеролога <span class="no-wrap">(в течение 30 дней)</span> <span class="no-wrap">Смолина О.А.</span></td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Консультация трихолога</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Забор соскобов</td>
+                  <td class="service__price">230 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Забор мазка</td>
+                  <td class="service__price">350 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Плазмолифтинг в дерматологии и трихологии <span class="no-wrap">(1 пробирка)</span></td>
+                  <td class="service__price">3000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Плазмолифтинг в дерматологии и трихологии <span class="no-wrap">(2 пробирки)</span></td>
+                  <td class="service__price">4500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Лазерное удаление невуса до 1 см на лице и волосистой части головы</td>
+                  <td class="service__price">1500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Лазерное удаление невуса свыше 1 см на лице и волосистой части головы</td>
+                  <td class="service__price">2000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Лазерное удаление невуса до 1 см на теле</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Лазерное удаление невуса свыше 1 см на теле</td>
+                  <td class="service__price">2000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Гистологическое исследование </td>
+                  <td class="service__price">2500 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/heart.svg" alt="">
+            <div class="pane__title">Кардиология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием врача-кардиолога</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Повторный прием врача-кардиолога <br>(в течение 30 дней)</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием врача-кардиолога (СПб)</td>
+                  <td class="service__price">1700 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/stomath.svg" alt="">
+            <div class="pane__title">Гастроэнтерология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием врача-гастроэнтеролога (СПб)</td>
+                  <td class="service__price">1800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Повторный прием врача-гастроэнтеролога <span class="no-wrap">(в течение 30 дней)</span></td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/therapy.svg" alt="">
+            <div class="pane__title">Терапия</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием врача-терапевта <span class="no-wrap">Гонтарева Л.А.</span></td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Повторный прием врача-терапевта <span class="no-wrap">(в течение 30 дней)</span> <span class="no-wrap">Гонтарева Л.А.</span></td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием врача-терапевта (СПб) <span class="no-wrap">Лопатин С.Н.</span></td>
+                  <td class="service__price">1500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Повторный прием врача-терапевта (СПб) <span class="no-wrap">(в течение 30 дней) </span><span class="no-wrap">Лопатин С.Н.</span> </td>
+                  <td class="service__price">1300 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Оформление санаторно-курортной карты <span class="no-wrap">(с анализами и ЭКГ пациента)</span></td>
+                  <td class="service__price">600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Оформление санаторно-курортной карты <span class="no-wrap">(со сдачей анализов и ЭКГ в центре)</span></td>
+                  <td class="service__price">1800 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/gynecology.svg" alt="">
+            <div class="pane__title">Гинекология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"></td>
+                  <td class="service__price">1800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"></td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/brain.svg" alt="">
+            <div class="pane__title">Неврология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"></td>
+                  <td class="service__price">1800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"></td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/psychotherapy.svg" alt="">
+            <div class="pane__title">Психотерапия</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Прием психиатра, психотерапевта, геронтолога, к.м.н. (1 час)<br>Коваленко И.Ю.</td>
+                  <td class="service__price">4000 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/kidney.svg" alt="">
+            <div class="pane__title">Урология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/bone.svg" alt="">
+            <div class="pane__title">Травматология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/joint.svg" alt="">
+            <div class="pane__title">Ортопедия</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name">Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name">Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panes-wrapapper">
+      <div class="panes panes-children" id="directions-children">
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/brain.svg" alt="">
+            <div class="pane__title">Неврология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"> </td>
+                  <td class="service__price">1800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> </td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/bone.svg" alt="">
+            <div class="pane__title">Травматология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"> Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/joint.svg" alt="">
+            <div class="pane__title">Дерматология</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"> Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/uzi-diagnostika.svg" alt="">
+            <div class="pane__title">Узи-диагностика</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"> Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/func-diagnostika.svg" alt="">
+            <div class="pane__title">Функциональная диагностика</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"> Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane__title-wrap"><img class="pane__img" src="img/joint.svg" alt="">
+            <div class="pane__title">Ортопедия</div>
+          </div>
+          <div class="pane__content"> 
+            <table class="price-table">
+              <tbody>
+                <tr class="service__row"> 
+                  <td class="service__name"> Первичный прием</td>
+                  <td class="service__price">1000 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Вторичный прием в течение 30 дней</td>
+                  <td class="service__price">800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение лекарственных средств пациента</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Ферматрон”</td>
+                  <td class="service__price">7500 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставное введение препарата “Дипроспан”</td>
+                  <td class="service__price">1600 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Параартикулярная блокада</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Инъекционная форма тромбоцитарной аутоплазмы (Plasmolifting)</td>
+                  <td class="service__price">3800 руб.</td>
+                </tr>
+                <tr class="service__row"> 
+                  <td class="service__name"> Внутрисуставная пункция</td>
+                  <td class="service__price">900 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -168,7 +704,7 @@
         <div class="med-info">
           <ul class="med-info-list">
             <li class="med-info__item location">г. Приозерск, ул. Комсомольская, д. 6</li>
-            <li class="med-info__item phone"> <a class="med-info__link" href="tel:+79291784646">+7 (929) 178-46-46</a></li>
+            <li class="med-info__item phone"> <a class="med-info__link" href="tel:88137938178">8 (813) 793-81-78</a></li>
             <li class="med-info__item mail"> <a class="med-info__link" href="mailto:medcentrprio@mail.ru">medcentrprio@mail.ru</a></li>
           </ul>
         </div>
@@ -197,6 +733,6 @@
   <div class="containter">                
     <p class="copyright">Copyright © 2005-2022 | Медицинский центр ООО “Здоровье”</p>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>

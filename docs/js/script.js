@@ -13522,18 +13522,37 @@ var _inputmask = _interopRequireDefault(require("inputmask"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import Swiper bundle with all modules installed
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 // let inputmask = new Inputmask("+7 (999) 999-9999");
 // let selector = document.querySelector(`[type=tel]`);
 // inputmask.mask(selector);
-
+// var header = $('header'),
+// 	scrollPrev = 0;
+// $(window).scroll(function() {
+// 	var scrolled = $(window).scrollTop();
+// 	if ( scrolled > 100 && scrolled > scrollPrev ) {
+// 		header.addClass('out');
+// 	} else {
+// 		header.removeClass('out');
+// 	}
+// 	scrollPrev = scrolled;
+// });
+$('.pane__title-wrap').click(function (e) {
+  $(this).toggleClass('active').closest('.pane').toggleClass('active').find('.pane__content').slideToggle();
+});
 /* -------- ОТЛАДОЧНАЯ СЕТКА-------- */
+
 $('button.grid').click(function () {
   $('.debug-grid').toggleClass('active');
 });
 /* -------- END  ОТЛАДОЧНАЯ СЕТКА-------- */
 
-var swiper_news = new _swiperBundle.default('.swiper-news', {
+var swiper_main_page_news = new _swiperBundle.default('.swiper-news', {
   slidesPerView: 'auto',
   // // loop: true,
   mousewheel: true,
@@ -13559,7 +13578,7 @@ var swiper_news = new _swiperBundle.default('.swiper-news', {
     el: ".swiper-pagination"
   }
 });
-var swiper_tabs = new _swiperBundle.default('.swiper-tabs', {
+var swiper_our_center = new _swiperBundle.default('.swiper-tabs', {
   slidesPerView: 'auto',
   // spaceBetween: 0,
   mousewheel: true,
@@ -13582,10 +13601,36 @@ var swiper_tabs = new _swiperBundle.default('.swiper-tabs', {
     }
   }
 });
+var swiper_services = new _swiperBundle.default('.swiper-services', {
+  slidesPerView: 1,
+  // spaceBetween: 0,
+  breakpoints: {// 360: {
+    //   slidesPerView: 'auto',
+    //   spaceBetween: 10,
+    // },
+    // 768:{
+    //   spaceBetween: 0,
+    // }, 
+    // 992: {
+    // }, 
+  },
+  navigation: {
+    nextEl: '[data-show-direction="#directions-children"]',
+    prevEl: '[data-show-direction="#directions-adult"]'
+  },
+  on: {
+    click: function click() {
+      this.slideTo(this.clickedIndex);
+    },
+    slideChange: function slideChange() {
+      $('.switch__content--active').siblings('.switch__content').click();
+    }
+  }
+});
 /* -------- МЕДИЦИНСКИЕ НАПРАВЛЕНИЯ ------- */
 // Переключение направлений
 
-$('.switch__content').click(function () {
+$('.switch-med-direction').click(function () {
   var $this = $(this);
   if ($this.hasClass('switch__content--active')) return;
   var $switch_bg = $this.siblings('.switch__bg');
@@ -13596,8 +13641,22 @@ $('.switch__content').click(function () {
   $switch_bg.css({
     left: $(this).offset().left - $(this).parent().offset().left + 'px'
   });
-  $('.directions').not(currentShowDirection).removeClass('directions--active');
-  $(".directions-" + currentDirectionName).addClass("directions--active");
+  $('.directions').not(currentShowDirection).removeClass('directions--active').addClass('animate__animated animate__fadeIn');
+  $(".directions-" + currentDirectionName).addClass("directions--active animate__animated animate__fadeIn");
+});
+$('.switch-serv-direction').click(function () {
+  var $this = $(this);
+  if ($this.hasClass('switch__content--active')) return;
+  var $switch_bg = $this.siblings('.switch__bg');
+  var currentShowDirection = $this.attr('data-show-direction');
+  var currentDirectionName = $this.attr('data-direction');
+  $this.siblings('.switch__content').removeClass('switch__content--active');
+  $this.addClass('switch__content--active');
+  $switch_bg.css({
+    left: $(this).offset().left - $(this).parent().offset().left + 'px'
+  });
+  $('.panes').not(currentShowDirection).removeClass('panes--active').addClass('animate__animated animate__fadeInLeft');
+  $('.panes-' + currentDirectionName).addClass('panes--active animate__animated animate__fadeInLeft');
 });
 /* -------- END МЕДИЦИНСКИЕ НАПРАВЛЕНИЯ ------- */
 
@@ -13625,5 +13684,13 @@ $('.icon-menu-burger').click(function () {
 
 $(window).resize(function () {});
 $(document).ready(function () {});
+
+var Service = /*#__PURE__*/_createClass(function Service(direction, service_name, service_cost) {
+  _classCallCheck(this, Service);
+
+  this.direction = direction;
+  this.service_name = service_name;
+  this.service_cost = service_cost;
+});
 
 },{"inputmask":1,"swiper/swiper-bundle":2}]},{},[3]);
